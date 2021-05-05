@@ -1,0 +1,90 @@
+.u-section-1 {
+  background-image: none;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 571px;
+}
+
+.u-section-1 .u-text-1 {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 7.5rem;
+  line-height: 1;
+  margin: 64px 591px 0 -369px;
+}
+
+.u-section-1 .u-list-1 {
+  width: 963px;
+  min-height: 439px;
+  grid-template-rows: repeat(1, auto);
+  height: auto;
+  margin: -427px 16px 15px auto;
+}
+
+.u-section-1 .u-repeater-1 {
+  grid-auto-columns: calc(33.3333% - 6.66667px);
+  grid-template-columns: repeat(3, calc(33.3333% - 6.66667px));
+  grid-auto-rows: 100%;
+  grid-gap: 10px;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 30px;
+}
+
+.u-section-1 .u-image-1 {
+  width: 245px;
+  height: 245px;
+  background-image: url("images/ashwin.png");
+  background-position: 50% 50%;
+  margin: -15px auto 0 0;
+}
+
+.u-section-1 .u-text-2 {
+  margin: 35px 0 0;
+}
+
+.u-section-1 .u-text-3 {
+  margin: 20px 0 0;
+}
+
+.u-section-1 .u-container-layout-2 {
+  padding: 30px;
+}
+
+.u-section-1 .u-image-2 {
+  width: 245px;
+  height: 245px;
+  background-image: url("images/ron.png");
+  background-position: 50% 41.43%;
+  margin: -15px auto 0 0;
+}
+
+.u-section-1 .u-text-4 {
+  margin: 35px 0 0;
+}
+
+.u-section-1 .u-text-5 {
+  margin: 20px 0 0;
+}
+
+.u-section-1 .u-container-layout-3 {
+  padding: 30px;
+}
+
+.u-section-1 .u-image-3 {
+  width: 245px;
+  height: 245px;
+  background-image: url("images/satyajeet.png");
+  background-position: 50% 51.43%;
+  margin: -15px auto 0 0;
+}
+
+.u-section-1 .u-text-6 {
+  margin: 35px 0 0;
+}
+
+.u-section-1 .u-text-7 {
+  margin: 20px 0 0;
+}

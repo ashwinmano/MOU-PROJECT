@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Raleway";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* img{
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    height: auto;
+} */
+
+#root{
+  width: 100%;
+  height: 100%;
+}
+.colab-wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-areas: ". colab-grid .";
+    padding: 4rem 0;
+}
+
+.colab-grid{
+    grid-area: colab-grid;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100%;
+    grid-gap: 20px;
+}
+
+.colab-grid-card{
+    grid-column-start: span 3;
+    position: relative;
+    min-height: 350px;
+    max-height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.grid-card-head{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img.card-img{
+    height: 100% !important;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    height: auto;
+}
+.card-details{
+    position: absolute;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(7,13,89, 0.65) 100%); 
+}
+.card-uni{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    transition: margin-bottom 0.3s ease-in-out;
+    z-index: 10;
+}
+
+img.card-logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: height 0.3s ease-in-out, width 0.3s ease-in-out;
+
+}
+
+.uni-title{
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    transition: font-size 0.35s ease-in-out;
+}
+
+.card-meta{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.meta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.meta i{
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.meta p{
+    line-height: 36px;
+}
+
+.card-uni-desc{
+    font-size: 14px;
+}
+
+.grid-card-body{
+    padding: 1.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -100%;
+    background: #fff;
+    transition: bottom 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+.colab-grid-card:hover img.card-logo{
+    width: 50px;
+    height: 50px;
+    border: .25px solid;
+}
+.colab-grid-card:hover .card-uni{
+    margin-bottom: 195px;
+}
+.colab-grid-card:hover .uni-title{
+    font-size: 16px;
+}
+.colab-grid-card:hover .grid-card-body{
+    bottom: 0;
+    padding: 2rem 1.5rem 1.5rem;
+    border: .5px solid rgba(76, 71, 78, 0.65);
+    transition-delay: 0.35s;
+}
+
+a.button{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 8px 25px;
+    background: #070d59;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width:1300px){
+    .colab-grid-card{
+        grid-column-start: span 4;
+        min-height: 400px;
+        max-height: 400px;
+    }
+
+    
+    .grid-card-body{
+        height: 90%;
+    }
+    .grid-card-body p{
+        padding: 0 1rem;
+    }
+}
